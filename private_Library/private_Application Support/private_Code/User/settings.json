@@ -1,0 +1,115 @@
+{
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "yaml.schemas": {
+        "file:///Users/timwisbauer/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
+    "atlascode.bitbucket.issues.monitorEnabled": false,
+    "atlascode.jira.explorer.monitorEnabled": false,
+    "atlascode.bitbucket.pipelines.monitorEnabled": false,
+    "python.languageServer": "Pylance",
+    "todo-tree.tree.showScanModeButton": false,
+
+    // Custom tags for the parser to use
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence"
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true,
+    "git.suggestSmartCommit": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "[terraform-vars]": {
+        "editor.defaultFormatter": "hashicorp.terraform",
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "file"
+    },
+    "editor.renderControlCharacters": true,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "workbench.startupEditor": "none",
+    "workbench.panel.defaultLocation": "right",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "redhat.telemetry.enabled": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "editor.fontSize": 16,
+    "rewrap.doubleSentenceSpacing": true,
+    "files.associations": {
+        "COMMIT_EDITMSG": "git-commit"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.scrollback": 100000,
+    // "terminal.integrated.profiles.osx": {
+    //     "bash": null,
+    //     "tmux": {
+    //         "path": "bash",
+    //         "args": ["-c", "/usr/local/bin/tmux new -ADs ${PWD##*/}"],
+    //         "icon": "terminal-tmux",
+    //     },
+    // },
+    // "terminal.integrated.defaultProfile.osx": "tmux",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "",
+        "projectKey": ""
+    },
+    "update.mode": "manual",
+    "workbench.editor.enablePreview": false,
+    "extensions.autoUpdate": false,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": false,
+        "scminput": false
+    },
+    "git.terminalAuthentication": false,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "go.showWelcome": false,
+    "go.survey.prompt": false,
+    "go.testEnvVars": {},
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.stickyScroll.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true
+}
