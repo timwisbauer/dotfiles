@@ -1,0 +1,43 @@
+smartgitroot()
+{
+        # Only change directories if we aren't already in the root.
+        if [[ $(pwd) != $(git rev-parse --show-toplevel) ]]; then
+                cd $(git rev-parse --show-toplevel) && echo "$_"
+        fi
+}
+
+git_cleanup_merged_branches() {
+        MAIN_BRANCH="$(git_main_branch)"
+        git checkout -q $MAIN_BRANCH && \
+        git for-each-ref refs/heads/ "--format=%(refname:short)" | while read branch; do mergeBase=$(git merge-base $MAIN_BRANCH $branch) && [[ $(git cherry $MAIN_BRANCH $(git commit-tree $(git rev-parse "$branch^{tree}") -p $mergeBase -m _)) == "-"* ]] && git branch -D $branch; done
+}
+
+git_main_branch() {
+        echo $(basename $(git symbolic-ref --short refs/remotes/origin/HEAD))
+}
+
+git_checkout() {
+        git checkout -b "$1"
+}
+
+git_smart_checkout() {
+        git stash && git checkout $(git_main_branch) && git pull && git_cleanup_merged_branches; git_checkout "$1" && git stash pop
+}
+
+new_terminal_tab() {
+        COMMAND=$1
+        osascript <<END
+                tell application "iTerm2"
+                        tell current window
+                        create tab with default profile
+                        end tell
+                        tell current session of current tab of current window
+                        write text "$COMMAND"
+                        end tell
+                end tell
+END
+}
+
+alias gcb=git_smart_checkout
+alias gpc='gh pr create'
+alias gpm='gh pr merge -s -d'
