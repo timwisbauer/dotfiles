@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew install iterm2 fzf stow zsh
+brew install iterm2 fzf stow zsh gh jq
 
 brew install --cask font-meslo-lg-nerd-font
 
