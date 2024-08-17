@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew install iterm2 fzf stow zsh gh jq
+brew install iterm2 fzf stow zsh jq gh
 
 brew install --cask font-meslo-lg-nerd-font
 
@@ -12,6 +12,8 @@ if [ ! -d "$QUICKSTART_DIR" ]; then
     echo "Cloning zsh-quickstart-kit..."
     git clone "$REPO_URL" "$QUICKSTART_DIR"
     echo "Cloned zsh-quickstart-kit into $QUICKSTART_DIR"
+    # FZF setup for quickstart kit.
+    sh "$(brew --prefix fzf)/install" --key-bindings --completion --no-update-rc
 else
     echo "zsh-quickstart-kit already exists in $QUICKSTART_DIR"
 fi
