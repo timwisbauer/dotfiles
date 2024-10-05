@@ -41,3 +41,9 @@ END
 alias gcb=git_smart_checkout
 alias gpc='gh pr create'
 alias gpm='gh pr merge -s -d'
+
+# Sets up Mise.  Consider moving to another file.
+eval "$(/usr/local/bin/mise activate zsh)"
+
+export EDITOR=lvim
+export PATH=/Users/timwisbauer/.local/bin:$PATH

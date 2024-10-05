@@ -1,0 +1,4 @@
+# Just install the latest version of Node because LunarVim needs it.
+[tools]
+node = ['20']
+
