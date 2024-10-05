@@ -4,7 +4,13 @@ My dotfiles managed with chezmoi.  Quickstart guide for chezmoi here: https://ww
 
 ## Getting started
 
+### Set up 1Password
+- Install `brew install 1password`
+- Open the app and sign in
+- Set up the CLI integration.  Settings -> Developer -> Integrate with 1Password CLI.
+
+### Apply Chezmoi
 Install chezmoi
 ```
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply timwisbauer
 ```
