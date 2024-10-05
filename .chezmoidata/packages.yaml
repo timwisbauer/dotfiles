@@ -1,0 +1,14 @@
+packages:
+  darwin:
+    brews:
+    - 'fzf'
+    - 'stow'
+    - 'zsh'
+    - 'jq'
+    - 'gh'
+    - 'mise'
+    - 'ripgrep'
+    - 'lazygit'
+    - 'nvim'
+    casks:
+    #- 'google-chrome'
