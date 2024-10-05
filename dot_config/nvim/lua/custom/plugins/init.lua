@@ -3,28 +3,22 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-  'nvim-neo-tree/neo-tree.nvim',
-  branch = 'v3.x',
+  "kdheepak/lazygit.nvim",
+  lazy = true,
+  cmd = {
+      "LazyGit",
+      "LazyGitConfig",
+      "LazyGitCurrentFile",
+      "LazyGitFilter",
+      "LazyGitFilterCurrentFile",
+  },
+  -- optional for floating window border decoration
   dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
-    'MunifTanjim/nui.nvim',
-    -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+      "nvim-lua/plenary.nvim",
   },
-  opts = {
-    filesystem = {
-      filtered_items = {
-        visible = true,
-        show_hidden_count = true,
-        hide_dotfiles = false,
-        hide_gitignored = false,
-        hide_by_name = {
-          '.git',
-          '.DS_Store',
-          'thumbs.db',
-        },
-        never_show = {},
-      },
-    },
-  },
+  -- setting the keybinding for LazyGit with 'keys' is recommended in
+  -- order to load the plugin when the command is run for the first time
+  keys = {
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+  }
 }
