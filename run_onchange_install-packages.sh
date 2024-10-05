@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew install iterm2 fzf stow zsh jq gh
+brew install fzf stow zsh jq gh nvim
 
 brew install --cask font-meslo-lg-nerd-font
 
@@ -17,9 +17,4 @@ if [ ! -d "$QUICKSTART_DIR" ]; then
 else
     echo "zsh-quickstart-kit already exists in $QUICKSTART_DIR"
 fi
-
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.config/iterm"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
