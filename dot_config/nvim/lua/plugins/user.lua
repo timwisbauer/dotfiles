@@ -29,6 +29,26 @@ return {
 			return opts
 		end,
 	},
+	-- Override neo-tree to show hidden files.
+	{
+		"nvim-neo-tree/neo-tree.nvim",
+		opts = function(_, opts)
+			opts.filesystem = {
+				filtered_items = {
+					visible = true,
+					show_hidden_count = true,
+					hide_dotfiles = false,
+					hide_gitignored = false,
+					hide_by_name = {
+						".git",
+						".DS_Store",
+						"thumbs.db",
+					},
+				},
+			}
+			return opts
+		end,
+	},
 	{
 		"goolord/alpha-nvim",
 		opts = function(_, opts)
