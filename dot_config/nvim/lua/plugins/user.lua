@@ -17,7 +17,18 @@ return {
 
 	-- == Examples of Overriding Plugins ==
 
-	-- customize alpha options
+	-- Override toggleterm to maximize the default window size.  This way LazyGit open in a "fullscreen" window.
+	{
+		"akinsho/toggleterm.nvim",
+		opts = function(_, opts)
+			-- customize the dashboard header
+			opts.float_opts = {
+				width = 1000000,
+				height = 1000000,
+			}
+			return opts
+		end,
+	},
 	{
 		"goolord/alpha-nvim",
 		opts = function(_, opts)
