@@ -46,3 +46,4 @@ alias gpm='gh pr merge -s -d'
 eval "$(/usr/local/bin/mise activate zsh)"
 
 export EDITOR=nvim
+export PATH=/Users/timwisbauer/.local/bin:$PATH
