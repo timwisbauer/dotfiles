@@ -45,5 +45,4 @@ alias gpm='gh pr merge -s -d'
 # Sets up Mise.  Consider moving to another file.
 eval "$(/usr/local/bin/mise activate zsh)"
 
-export EDITOR=lvim
-export PATH=/Users/timwisbauer/.local/bin:$PATH
+export EDITOR=nvim
