@@ -10,5 +10,6 @@ packages:
     - 'ripgrep'
     - 'lazygit'
     - 'nvim'
+    - 'eza'
     casks:
     #- 'google-chrome'
