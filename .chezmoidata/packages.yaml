@@ -11,5 +11,7 @@ packages:
     - 'lazygit'
     - 'nvim'
     - 'eza'
+    - 'reattach-to-user-namespace'
+    - 'tmux'
     casks:
     #- 'google-chrome'
