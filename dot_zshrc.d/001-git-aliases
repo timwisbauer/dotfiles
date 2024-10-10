@@ -47,3 +47,5 @@ eval "$(/usr/local/bin/mise activate zsh)"
 
 export EDITOR=nvim
 export PATH=/Users/timwisbauer/.local/bin:$PATH
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
