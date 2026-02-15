@@ -14,4 +14,4 @@ packages:
     - 'reattach-to-user-namespace'
     - 'tmux'
     casks:
-    #- 'google-chrome'
+    - 'google-chrome'

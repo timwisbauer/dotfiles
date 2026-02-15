@@ -14,7 +14,7 @@ dockutil --add /Applications/Google\ Chrome.app --allhomes
 
 # Development Tools
 dockutil --add /Applications/Visual\ Studio\ Code.app --allhomes
-dockutil --add /Applications/Ghostty.app --allhomes
+dockutil --add /Applications/Wezterm.app --allhomes
 
 # Productivity Apps  
 dockutil --add /Applications/Toggl\ Track.app --allhomes
