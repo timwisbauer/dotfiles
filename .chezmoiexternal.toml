@@ -8,3 +8,8 @@
     type = "git-repo"
     url = "https://github.com/tmux-plugins/tpm"
     refreshPeriod = "168h"
+
+[".zsh-quickstart-kit"]
+    type = "git-repo"
+    url = "https://github.com/unixorn/zsh-quickstart-kit.git"
+    refreshPeriod = "168h"

@@ -49,3 +49,11 @@ export EDITOR=nvim
 export PATH=/Users/timwisbauer/.local/bin:$PATH
 export HISTSIZE=1000000000
 export SAVEHIST=$HISTSIZE
+
+# Disable all auto-update mechanisms - chezmoi handles updates
+unset QUICKSTART_KIT_REFRESH_IN_DAYS
+export ZGEN_AUTO_UPDATE_DAYS=0
+export DISABLE_AUTO_UPDATE=true
+export DISABLE_UPDATE_PROMPT=true
+export HOMEBREW_NO_AUTO_UPDATE=1
+
