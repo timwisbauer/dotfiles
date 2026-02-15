@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check if dockutil is installed
+if ! command -v dockutil &> /dev/null; then
+    echo "dockutil not found. Installing via Homebrew..."
+    brew install dockutil
+fi
+
 # Configure macOS Dock
 # This script sets up your Dock with your preferred applications
 
